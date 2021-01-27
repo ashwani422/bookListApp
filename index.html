@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booklist App</title>
+
+  <!--------------------------------------------------------------------------------------------------------------------------------
+  --  Font Awesome
+  --------------------------------------------------------------------------------------------------------------------------------->
+  <link rel="stylesheet" href="./css/fontAwesome.css">
+
+  <!--------------------------------------------------------------------------------------------------------------------------------
+  --  Main stylesheet
+  --------------------------------------------------------------------------------------------------------------------------------->
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+  
+  <main class="container" id="container">
+    <h1 class="title"><i class="fas fa-book-reader"></i> Book <span class="title-span">List</span></h1>
+
+    <div id="demo"></div>
+
+    <div class="list-wrapper" id="list-wrapper">
+      <form id="form" action="#">
+        <input type="text" id="text" placeholder="Book Name">
+        <input class="btn" type="submit" value="Add">
+      </form>
+
+      <div class="list-box">
+        <h1 class="list-title">Books</h1>
+        <ul id="list"></ul>
+      </div>
+    </div>
+  </main>
+
+  <!--------------------------------------------------------------------------------------------------------------------------------
+  --  Main js file
+  --------------------------------------------------------------------------------------------------------------------------------->
+  <script src="./js/main.js"></script>
+</body>
+</html>

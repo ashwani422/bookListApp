@@ -1,0 +1,130 @@
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: PoppinsRegular;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: PoppinsBold;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  background: #FE5F55;
+  color: #fff;
+  padding: .51rem 2rem;
+}
+
+.success {
+  background: #9CC5A1;
+  border: 2px solid #49A078;
+  padding: .5rem;
+}
+
+.danger {
+  background: #FE5F55;
+  border: 2px solid #EF233C;
+  padding: .5rem;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container .title {
+  font-size: 4rem;
+  margin: 2rem auto;
+  text-align: center;
+  background: #2EC4B6;
+}
+
+.container .title .title-span {
+  color: #FE5F55;
+}
+
+.container .list-wrapper {
+  background: #f2f2f2;
+  padding: 2rem;
+}
+
+.container .list-wrapper form {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.container .list-wrapper form input[type=text] {
+  width: 60%;
+  min-width: 200px;
+  font-size: 1.2rem;
+  outline: none;
+  padding: .4rem .5rem;
+}
+
+.container .list-wrapper form input[type=submit] {
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.container .list-wrapper form input[type=submit]:hover {
+  background: #db3226;
+}
+
+.container .list-wrapper .list-box .list-items {
+  padding: .5rem;
+  margin-bottom: .2rem;
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.container .list-wrapper .list-box .list-items:last-child {
+  margin-bottom: none;
+}
+
+.container .list-wrapper .list-box .list-items:hover {
+  background: #f8f8f8;
+}
+
+.container .list-wrapper .list-box .list-items .list-delete {
+  padding: 0 .4rem;
+  background: #FC0000;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.container .list-wrapper .list-box .list-items .list-delete:hover {
+  background: #E40000;
+}
+/*# sourceMappingURL=main.css.map */

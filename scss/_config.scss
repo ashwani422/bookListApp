@@ -1,0 +1,79 @@
+// ---------------------------------------------------------
+// Fonts
+// ---------------------------------------------------------
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+
+// ---------------------------------------------------------
+//  Colors
+// ---------------------------------------------------------
+$gray: #f2f2f2;
+$gray-light: #f8f8f8;
+$red-delete: #FC0000;
+$red-delete-dark: #E40000;
+$msg-danger: #FE5F55;
+$msg-danger-border: #EF233C;
+$msg-success: #9CC5A1;
+$msg-success-border: #49A078;
+$primary-color: #FE5F55;
+$primary-color-dark: #db3226;
+$secondary-color: #2EC4B6;
+$third-color: #FF9F1C;
+
+
+// ---------------------------------------------------------
+// Mixins
+// ---------------------------------------------------------
+@mixin transition-ease {
+  transition: .5s ease-in-out;
+}
+
+
+// ---------------------------------------------------------
+// Defaults
+// ---------------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PoppinsRegular;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: PoppinsBold;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  background: $primary-color;
+  color: #fff;
+  padding: .51rem 2rem;
+}
+
+.success {
+  background: $msg-success;
+  border: 2px solid $msg-success-border;
+  padding: .5rem;
+}
+
+.danger {
+  background: $msg-danger;
+  border: 2px solid $msg-danger-border;
+  padding: .5rem;
+}
+

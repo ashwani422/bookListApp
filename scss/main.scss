@@ -1,0 +1,87 @@
+// ---------------------------------------------------------
+// Partials
+// ---------------------------------------------------------
+@import 'config';
+
+
+// ---------------------------------------------------------
+// Index.html
+// ---------------------------------------------------------
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+
+  .title {
+    font-size: 4rem;
+    margin: 2rem auto;
+    text-align: center;
+    background: $secondary-color;
+
+    .title-span {
+      color: $primary-color;
+    }
+  }
+
+  .list-wrapper {
+    background: $gray;
+    padding: 2rem;
+
+    form {
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+      text-align: center;
+
+      input[type = text] {
+        width: 60%;
+        min-width: 200px;
+        font-size: 1.2rem;
+        outline: none;
+        padding: .4rem .5rem;
+      }
+
+      input[type = submit] {
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+        @include transition-ease;
+
+        &:hover {
+          background: $primary-color-dark;
+        }
+      }
+    }
+
+    .list-box {
+
+      .list-items {
+        padding: .5rem;
+        margin-bottom: .2rem;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: space-between;
+        @include transition-ease;
+
+        &:last-child {
+          margin-bottom: none;
+        }
+
+        &:hover {
+          background: $gray-light;
+        }
+
+        .list-delete {
+          padding: 0 .4rem;
+          background: $red-delete;
+          cursor: pointer;
+          @include transition-ease;
+
+          &:hover {
+            background: $red-delete-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
