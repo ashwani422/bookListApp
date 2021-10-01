@@ -57,6 +57,8 @@ ul {
   margin: 2rem auto;
   text-align: center;
   background: #2EC4B6;
+  -webkit-filter: drop-shadow(5px 5px 5px #ccc);
+          filter: drop-shadow(5px 5px 5px #ccc);
 }
 
 .container .title .title-span {
@@ -66,6 +68,8 @@ ul {
 .container .list-wrapper {
   background: #f2f2f2;
   padding: 2rem;
+  -webkit-filter: drop-shadow(5px 5px 5px #ccc);
+          filter: drop-shadow(5px 5px 5px #ccc);
 }
 
 .container .list-wrapper form {

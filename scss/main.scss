@@ -17,6 +17,7 @@
     margin: 2rem auto;
     text-align: center;
     background: $secondary-color;
+    @include drop-shadow;
 
     .title-span {
       color: $primary-color;
@@ -26,6 +27,7 @@
   .list-wrapper {
     background: $gray;
     padding: 2rem;
+    @include drop-shadow;
 
     form {
       margin: 0 auto;

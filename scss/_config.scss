@@ -36,6 +36,10 @@ $third-color: #FF9F1C;
   transition: .5s ease-in-out;
 }
 
+@mixin drop-shadow {  
+  filter: drop-shadow(5px 5px 5px #ccc);;
+}
+
 
 // ---------------------------------------------------------
 // Defaults
